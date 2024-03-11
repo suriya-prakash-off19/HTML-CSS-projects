@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E4D6A7;
+}
+*{
+    box-sizing: border-box;
+    color: #acedff;
+}
+.header
+{
+    width: auto;
+    height: 10%;
+    background-color: #1C110A;
+    display:flex ;
+    align-items: center;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.header-list
+{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    list-style: none;
+    align-self: flex-end;
+    margin-left: 50%;   
+}
+.header-list li
+{
+    font-size: large;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0px 7px;
+    margin: 9px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.body
+{
+    width: 100%;
+    height: 80%;
+}
+.footer
+{
+    width: 100%;
+    height: 10%;
+    background-color: #1C110A;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.table
+{
+    width: 100%;
+    padding-bottom: 5%;
+}
+.table table
+{
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* tbody
+{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+} */
+ th, td{
+    border: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    /* padding-bottom: 0px; */
+    background-color: #2E282A;
+}
+html::-webkit-scrollbar
+{
+    display: none;
+}
+.footer img
+{
+ margin-left: 64%;
+}

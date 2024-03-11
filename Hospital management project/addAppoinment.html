@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addAppoinment.css">
+</head>
+
+<body>
+    <div class="align">
+        <div class="close">
+            <img src="/img/cancel.png" alt="" align="end" onclick="location.href='home.html'">
+        </div>
+        <div class="appoin">
+            <form>
+                <div>
+                    <label for="">FirstName</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">LastName</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">Age</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div><label for="">DOB</label>  
+                    <input type="date" name="" id="">
+                </div>
+                <div><label for="">Phone</label>
+                    <input type="tel" name="" id="phone">
+                </div>
+                <div><label for="">Weight</label>
+                    <input type="text" name="" id="">
+                </div>
+                <!-- <div><label for="">Blood pressure</label>
+                    <input type="text" name="" id=""></div> -->
+                <div><label for="">Doctor</label>
+                    <select name="" id="">
+                        <option value="">---select---</option>
+                        <option value="">Dr.Muthusami Venugopal Iyer</option>
+                        <option value="">Dr.Pablo</option>
+                        <option value="">Dr.Nesamani</option>
+                        <option value="">Dr.Dinesh</option>
+                        <option value="">Dr.Gokul</option>
+                    </select>
+                </div>
+                <div><label for="">Date of Appoinment</label>
+                    <select name="" id="">
+                        <option value="">---select---</option>
+                        <option value="">14-02-2024</option>
+                        <option value="">15-02-2024</option>
+                        <option value="">16-02-2024</option>
+                        <option value="">17-02-2024</option>
+                        <option value="">18-02-2024</option>
+                    </select>
+                </div>
+                <div><label for="">Time of Appoinment</label>
+                    <select name="" id="">
+                        <option value="">---select---</option>
+                        <option value="">09:00 AM - 09:30 AM</option>
+                        <option value="">09:31 AM - 10:00 AM</option>
+                        <option value="">10:00 AM - 10:30 AM</option>
+                        <option value="">10:31 AM - 11:00 AM</option>
+                        <option value="">11:30 AM - 12:30 PM</option>
+                        <option value="">12:31 PM - 01:20 PM</option>
+                        <option value="">02:00 PM - 02:30 PM</option>
+                        <option value="">02:31 PM - 03:00 PM</option>
+                        <option value="">03:21 PM - 03:40 PM</option>
+                        <option value="">03:41 PM - 04:20 PM</option>
+                    </select>
+                </div>
+                <div><label for="">Reason</label>
+                    <input type="text" name="" id="">
+                </div>
+                
+            </form>
+        </div>
+        <br>
+        <button onclick="javascript:alert('Thank you for appoinment'); window.location.href='home.html'">Submit</button>
+    </div>
+    <script>
+        function call() {
+            var val = document.getElementById('phone').val;
+            if (val)
+                location = "https://api.whatsapp.com/send?phone=" + escape('91' + val) + "&text=Thank you for getting a appoinment in H-Centre";
+        };
+    </script>
+</body>
+
+</html>
